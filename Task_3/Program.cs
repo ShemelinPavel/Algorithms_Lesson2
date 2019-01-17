@@ -20,6 +20,12 @@ namespace Task_3
 {
     class Program
     {
+        /// <summary>
+        /// посчет числа комманд преобразования одного числа в другое, используя массив (словарь)
+        /// </summary>
+        /// <param name="numA">начальное число</param>
+        /// <param name="NumB">конечное число</param>
+        /// <returns>число команд</returns>
         public static int Command_Calc_Dict( int numA, int NumB )
         {
             Dictionary<int, int> commandList = new Dictionary<int, int>();
@@ -42,6 +48,12 @@ namespace Task_3
             return ( commandList.Count == 0 ) ? 0 : commandList[numA];
         }
 
+        /// <summary>
+        /// посчет числа комманд преобразования одного числа в другое, используя рекурсию
+        /// </summary>
+        /// <param name="numA">начальное число</param>
+        /// <param name="numB">конечное число</param>
+        /// <param name="res">число команд</param>
         public static void Command_Calc_Rec( int numA, int numB, ref int res )
         {
             if (numA > numB) return;

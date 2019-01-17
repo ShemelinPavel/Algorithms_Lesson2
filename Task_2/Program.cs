@@ -21,6 +21,14 @@ namespace Task_2
 {
     class Program
     {
+        /// <summary>
+        /// возведение в степень (рекурсия)
+        /// </summary>
+        /// <param name="val">число, возводимое в степень</param>
+        /// <param name="pow">значение степени</param>
+        /// <param name="fast">быстрый алгоритм true/false</param>
+        /// <param name="counter">счетчик шагов</param>
+        /// <returns>результат</returns>
         public static UInt64 Power_Rec( uint val, uint pow, bool fast, ref uint counter )
         {
             if (fast)
@@ -41,6 +49,13 @@ namespace Task_2
             }
         }
 
+        /// <summary>
+        /// возведение в степень
+        /// </summary>
+        /// <param name="val">число, возводимое в степень</param>
+        /// <param name="pow">значение степени</param>
+        /// <param name="counter">счетчик шагов</param>
+        /// <returns>результат</returns>
         public static UInt64 Power( uint val, uint pow, ref uint counter )
         {
             UInt64 res = 1;
